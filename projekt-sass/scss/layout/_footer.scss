@@ -2,74 +2,76 @@
 /*==========  4.6 - Footer styles  ==========*/
 
 .t108-footer {
-	background-color: $color-footer;
+  background-color: $color-footer;
 
-	.footer-above {
-		padding-top: $baseline * 2;
+  .footer-above {
+    padding-top: 80px;
 
-		.margin-none {
+    .margin-none {
+      p {
+        margin-bottom: $margin-none;
+      }
+    }
 
-			p {
-				margin-bottom: $margin-none;
-			}
-		}
+    .footer-col {
+      margin-bottom: $baseline * 3;
 
-		.footer-col {
-			margin-bottom: $baseline * 3;
+      .contact,
+      .tweets {
+        padding-left: $padding-none;
 
-			.contact, .tweets {
-				padding-left: $padding-none;
+        p {
+          margin: $margin-none;
+        }
 
-				p {
-					margin: $margin-none;
-				}
+        @media (max-width: 768px) {
+          .pull-right {
+            float: left !important;
+          }
+        }
 
-				@media(max-width: 768px) {
+        a:hover {
+          p {
+            margin: $margin-none;
+            color: $color-primary;
+          }
+        }
 
-					.pull-right {
-						float: left !important;
-					}
-				}
+        .fa-twitter {
+          color: $color-primary;
+        }
+      }
 
-				a:hover {
-					
-					p {
-						margin: $margin-none;
-						color: $color-primary;
-					}
-				}
+      .tweets {
+        a:hover {
+          color: $color-link-hover;
+        }
+      }
+    }
 
-				.fa-twitter {
-					color: $color-primary;
-				}
-			}
+    a {
+      text-decoration: none;
+    }
 
-			.tweets {
+    a:hover {
+      color: $color-primary;
+    }
 
-				a:hover {
-					color: $color-link-hover;
-				}
-			}
-		}
+    .btn-default:hover {
+      border-color: $color-primary;
+    }
+  }
 
-		a {
-			text-decoration: none;
-		}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-text-light;
+  }
 
-		a:hover {
-			color: $color-primary;
-		}
-
-		.btn-default:hover {
-			border-color: $color-primary;
-		}
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		color: $color-text-light;
-	}
-
-	p {
-		color: $color-text-light;
-	}
+  p {
+    color: $color-text-light;
+  }
 }
